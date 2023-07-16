@@ -1,18 +1,11 @@
-import {
-  Box,
-  Burger,
-  Container,
-  Flex,
-  Header,
-  Menu,
-  Text,
-} from "@mantine/core";
+import { Container, Flex, Header, Menu, Text } from "@mantine/core";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { createStyles } from "@mantine/core";
 import { IconMenu2 } from "@tabler/icons-react";
-import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import Image from "next/image";
+import paper from "../../assets/images/paper.png";
 
 const useStyles = createStyles((theme) => ({
   itemNav: {
@@ -40,23 +33,8 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 export const Navbar = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [embla, setEmbla] = useState(null);
   const { classes } = useStyles();
-  const [opened, setOpened] = useState(false);
   const fitureRef = useRef(null);
-  const handleScroll = useCallback(() => {
-    if (!embla) return;
-    const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
-    setScrollProgress(progress * 100);
-  }, [embla, setScrollProgress]);
-
-  useEffect(() => {
-    if (embla) {
-      embla.on("scroll", handleScroll);
-      handleScroll();
-    }
-  }, [embla]);
 
   const [NavbarRef, NavbarInView] = useInView({
     triggerOnce: true,
@@ -83,8 +61,8 @@ export const Navbar = () => {
           <Container>
             <Flex justify={"space-between"} align={"center"}>
               <div style={{ display: "flex", gap: "1rem" }}>
-                <img
-                  src="https://picsum.photos/200"
+                <Image
+                  src={paper}
                   alt="Logo"
                   border="0"
                   style={{ width: "50px" }}

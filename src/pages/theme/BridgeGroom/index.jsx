@@ -1,7 +1,8 @@
 import { Container, Flex, Text } from "@mantine/core";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
+import paper from "../../../assets/images/paper.png";
 export const BridgeGroom = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -46,17 +47,17 @@ export const BridgeGroom = () => {
               className=" w-full"
             >
               <Flex direction={"column"} className="h-48 w-36">
-                <img
+                <Image
                   className="rounded-full h-48 w-36 object-none"
-                  src="https://plus.unsplash.com/premium_photo-1675107358627-8487478e476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                  src={paper}
                   alt="Groom"
                 />
               </Flex>
               <Text className="text-cyan-900 text-4xl font-pengantin-1">&</Text>
               <Flex direction={"column"} className="h-48 w-36">
-                <img
+                <Image
                   className="rounded-full h-48 w-36 object-none"
-                  src="https://images.unsplash.com/photo-1606216769898-c88daccaa479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                  src={paper}
                   alt="Groom"
                 />
               </Flex>

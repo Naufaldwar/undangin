@@ -3,6 +3,8 @@ import { IconX } from "@tabler/icons-react";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import paper from "../../../assets/images/paper.png";
 
 export const Hero = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -63,10 +65,7 @@ export const Hero = () => {
                     color="white"
                   />
                   <Flex h={200} w={200} className="rounded-full">
-                    <img
-                      src="https://picsum.photos/200"
-                      className="rounded-full"
-                    ></img>
+                    <Image src={paper} className="rounded-full"></Image>
                   </Flex>
                   <Text className="font-wedding-1 text-cyan-100 text-2xl">
                     The Wedding Of
