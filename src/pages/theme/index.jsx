@@ -3,7 +3,7 @@ import { Hero } from "@/components/Theme/Hero";
 import { Title } from "@/components/Theme/Title";
 
 import { BackgroundImage, Flex, Text } from "@mantine/core";
-import { BridgeGroom } from "./BridgeGroom";
+import { BridgeGroom } from "../../components/Theme/BridgeGroom";
 export default function Example() {
   return (
     <>
