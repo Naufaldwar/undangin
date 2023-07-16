@@ -49,7 +49,7 @@ const Home = () => {
       embla.on("scroll", handleScroll);
       handleScroll();
     }
-  }, [embla]);
+  }, []);
   const { classes } = useStyles();
 
   return (

@@ -39,7 +39,7 @@ export const BridgeGroom = () => {
               Once in awhile, right in the middle of an ordinary life, love
               gives us a fairy tale.
             </Text>
-            <Text className="font-wedding-1 text-cyan-900">"Unknown"</Text>
+            <Text className="font-wedding-1 text-cyan-900">Unknown</Text>
             <Flex
               justify={"space-between"}
               align={"center"}

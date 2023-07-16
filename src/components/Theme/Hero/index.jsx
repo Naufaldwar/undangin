@@ -65,7 +65,11 @@ export const Hero = () => {
                     color="white"
                   />
                   <Flex h={200} w={200} className="rounded-full">
-                    <Image src={paper} className="rounded-full"></Image>
+                    <Image
+                      src={paper}
+                      alt="pic"
+                      className="rounded-full"
+                    ></Image>
                   </Flex>
                   <Text className="font-wedding-1 text-cyan-100 text-2xl">
                     The Wedding Of
