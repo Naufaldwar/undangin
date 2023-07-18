@@ -9,10 +9,6 @@ import paper from "../../../assets/images/paper.png";
 export const Hero = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -25,7 +21,7 @@ export const Hero = () => {
   const heroAnimations = {
     hidden: { opacity: 0, y: -500 },
     visible: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -500 }, // Animasi slide down saat modal tertutup
+    exit: { opacity: 0, y: -500 },
   };
 
   return (
@@ -33,10 +29,11 @@ export const Hero = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={heroRef}
             className="modal "
             initial="hidden"
             animate="visible"
-            exit="exit" // Gunakan animasi exit untuk slide down saat modal tertutup
+            exit="exit"
             variants={heroAnimations}
             transition={{ duration: 1 }}
           >
@@ -64,31 +61,28 @@ export const Hero = () => {
                     onClick={closeModal}
                     color="white"
                   />
-                  <Flex h={200} w={200} className="rounded-full">
-                    <Image
-                      src={paper}
-                      alt="pic"
-                      className="rounded-full"
-                    ></Image>
+                  <Flex className="rounded-full h-40 w-40">
+                    <Image src={paper} alt="pic" className="rounded-full" />
                   </Flex>
-                  <Text className="font-wedding-1 text-cyan-100 text-2xl">
+                  <Text className="font-wedding-1 text-cyan-100 text-lg">
                     The Wedding Of
                   </Text>
-                  <Text className="text-cyan-100 text-5xl font-pengantin-1">
+                  <Text className="text-cyan-100 text-3xl font-pengantin-1">
                     Adam & Hawa
                   </Text>
-                  <Text className="text-slate-100 text-xl font-wedding-1">
+                  <Text className="text-slate-100 font-wedding-1">
                     Dear Mr./ Mrs./ Ms.
                   </Text>
-                  <Text className="text-slate-100 text-xl font-wedding-1">
-                    Nama Tamu
+                  <Text className="text-slate-100 text-lg font-wedding-1">
+                    Naufal Dwi Ariananto
                   </Text>
-                  <Text className="font-wedding-1 text-cyan-100 text-xl">
+                  <Text className="font-wedding-1 text-center text-cyan-100">
                     You are cordially invited to our wedding.
                   </Text>
                   <Button
                     color="blue[6]"
                     variant="filled"
+                    size="sm"
                     bg={"blue[6]"}
                     className="bg-cyan-700 hover:bg-cyan-600"
                     onClick={closeModal}

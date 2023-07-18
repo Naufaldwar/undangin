@@ -15,7 +15,7 @@ export const Audio = () => {
     setOnPause(!onPause);
   };
   return (
-    <Flex className="sticky top-0">
+    <Flex className="sticky top-0 z-50">
       <AnimatePresence wait>
         <motion.div
           ref={ref}

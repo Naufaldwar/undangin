@@ -14,20 +14,18 @@ export const Title = () => {
         <Flex
           style={{ backgroundColor: "rgba(100,100,100,0.3)" }}
           justify={"center"}
-          className="h-screen"
+          className="h-screen pt-28"
           align={"center"}
           direction={"column"}
-          gap={"xl"}
+          gap={"md"}
         >
-          <Text className="font-wedding-1 mb-10 text-cyan-100 text-2xl">
+          <Text className="font-wedding-1 mb-2 text-cyan-100 ">
             The Wedding of
           </Text>
-          <Text className="text-cyan-100 text-6xl font-pengantin-1">
+          <Text className="text-cyan-100 text-2xl font-pengantin-1">
             Adam & Hawa
           </Text>
-          <Text className="font-wedding-1 text-cyan-100 text-2xl">
-            20.12.24
-          </Text>
+          <Text className="font-wedding-1 text-cyan-100 ">20.12.24</Text>
         </Flex>
       </BackgroundImage>
     </Flex>
