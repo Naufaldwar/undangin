@@ -102,7 +102,7 @@ export const Countdown = ({ targetDate }) => {
             The highest happiness on earth is the happiness of marriage.
           </Text>
           <Text className="text-center font-semibold font-lugrasimo text-cyan-900">
-            "William Lyon Phelps"
+            {`"William Lyon Phelps"`}
           </Text>
         </Flex>
       </Flex>

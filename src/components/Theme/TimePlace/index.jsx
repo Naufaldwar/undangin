@@ -46,7 +46,7 @@ export const TimePlace = () => {
                   Gravitation is not responsible for people falling in love.
                 </Text>
                 <Text className="font-lugrasimo font-semibold text-white">
-                  "Albert Einstein"
+                  {`"Albert Einstein"`}
                 </Text>
               </Flex>
             </Flex>
