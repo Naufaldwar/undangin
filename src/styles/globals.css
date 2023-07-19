@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@layer components {
+  .font-lobster {
+    font-family: "Lobster", cursive;
+  }
+
+  .font-lugrasimo {
+    font-family: "Lugrasimo", cursive;
+    /* color: blue; */
+  }
+}
+
 .font-pengantin-1 {
   font-family: "Dancing Script", cursive;
 }

@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import ReactAudioPlayer from "react-audio-player";
 import { useInView } from "react-intersection-observer";
-import sanes from "@/assets/sanes.mp3";
+import sanes from "@/assets/example.mp3";
 import { useState } from "react";
 import { IconMusic, IconMusicOff } from "@tabler/icons-react";
 import { Box, Flex } from "@mantine/core";

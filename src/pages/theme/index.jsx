@@ -6,6 +6,7 @@ import { BackgroundImage, Flex, Text } from "@mantine/core";
 import { BridgeGroom } from "../../components/Theme/BridgeGroom";
 import { Wave } from "@/components/Theme/Wave";
 import { Countdown } from "@/components/Theme/Countdown";
+import { TimePlace } from "@/components/Theme/TimePlace";
 export default function Example({ targetDate }) {
   return (
     <>
@@ -16,7 +17,10 @@ export default function Example({ targetDate }) {
         <Wave />
         <BridgeGroom />
       </Flex>
-      <Countdown targetDate={targetDate} suppressHydrationWarning />
+      <BackgroundImage className="bg-paper-texture bg-repeat bg-contain px-4">
+        <Countdown targetDate={targetDate} suppressHydrationWarning />
+        <TimePlace />
+      </BackgroundImage>
     </>
   );
 }

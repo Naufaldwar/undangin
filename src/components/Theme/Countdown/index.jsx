@@ -1,4 +1,9 @@
+import { Flex, Text } from "@mantine/core";
+import Image from "next/image";
+import bunga from "../../../assets/images/bunga.png";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export const Countdown = ({ targetDate }) => {
   const isClient = typeof window !== "undefined"; // Memeriksa apakah kode berjalan di lingkungan klien
@@ -8,6 +13,15 @@ export const Countdown = ({ targetDate }) => {
   const [countDown, setCountDown] = useState(
     isClient ? countDownDate - new Date().getTime() : 0
   ); // Pastikan inisialisasi awal hanya terjadi di lingkungan klien
+
+  const [countRef, countInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const countAnimations = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   useEffect(() => {
     setClient(true);
@@ -36,10 +50,62 @@ export const Countdown = ({ targetDate }) => {
   const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
   return (
-    <div>
-      <p>
-        {days} days, {hours} hours, {minutes} minutes, {seconds} seconds
-      </p>
-    </div>
+    <motion.div
+      ref={countRef}
+      initial="hidden"
+      animate={countInView ? "visible" : "hidden"}
+      variants={countAnimations}
+      transition={{ duration: 0.5 }}
+    >
+      <Flex
+        direction={"column"}
+        justify={"center"}
+        align={"center"}
+        gap={"lg"}
+        className="font-lugrasimo py-10 text-cyan-900"
+      >
+        <Image src={bunga} alt="bunga" />
+        <Text className="text-center text-xl font-bold font-lugrasimo  text-cyan-900">
+          Countdown to
+        </Text>
+        <Text className="text-center text-4xl font-bold font-lobster text-cyan-900">
+          Our Happy Day
+        </Text>
+        <Flex gap={"lg"} className="font-lobster my-10">
+          <Flex direction={"column"} justify={"center"} align={"center"}>
+            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+              {days}
+            </Text>
+            <Text className="font-lobster text-cyan-900">Days</Text>
+          </Flex>
+          <Flex direction={"column"} justify={"center"} align={"center"}>
+            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+              {hours}
+            </Text>
+            <Text className="font-lobster text-cyan-900">Hours</Text>
+          </Flex>
+          <Flex direction={"column"} justify={"center"} align={"center"}>
+            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+              {minutes}
+            </Text>
+            <Text className="font-lobster text-cyan-900">Minutes</Text>
+          </Flex>
+          <Flex direction={"column"} justify={"center"} align={"center"}>
+            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+              {seconds}
+            </Text>
+            <Text className="font-lobster text-cyan-900">Seconds</Text>
+          </Flex>
+        </Flex>
+        <Flex direction={"column"}>
+          <Text className="text-center font-lugrasimo  text-cyan-900">
+            The highest happiness on earth is the happiness of marriage.
+          </Text>
+          <Text className="text-center font-semibold font-lugrasimo text-cyan-900">
+            "William Lyon Phelps"
+          </Text>
+        </Flex>
+      </Flex>
+    </motion.div>
   );
 };
