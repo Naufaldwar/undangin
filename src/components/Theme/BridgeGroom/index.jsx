@@ -17,8 +17,8 @@ export const BridgeGroom = () => {
 
   return (
     <div
+      className="bg-cyan-900"
       style={{
-        backgroundColor: "#088395",
         paddingBottom: 50,
         paddingTop: 10,
       }}
@@ -33,20 +33,20 @@ export const BridgeGroom = () => {
           <Flex
             direction={"column"}
             align={"center"}
-            style={{ backgroundColor: "#088395" }}
+            className="bg-cyan-900"
             gap={"md"}
           >
-            <Text className="font-wedding-1 text-cyan-100 text-lg">
+            <Text className="font-wedding-1 text-white text-lg">
               The Beloved
             </Text>
-            <Text className="font-wedding-1 text-cyan-900 text-xl">
+            <Text className="font-wedding-1 text-white text-xl">
               Groom & Bride
             </Text>
-            <Text className="text-center font-wedding-1 text-sm text-cyan-100 ">
+            <Text className="text-center font-wedding-1 text-sm text-white ">
               Once in awhile, right in the middle of an ordinary life, love
               gives us a fairy tale.
             </Text>
-            <Text className="font-wedding-1 text-cyan-900">Unknown</Text>
+            <Text className="font-wedding-1 text-white">Unknown</Text>
             <motion.div
               ref={ref}
               className="w-full"
@@ -75,26 +75,20 @@ export const BridgeGroom = () => {
                     src={paper}
                     alt="Groom"
                   />
-                  <Text className="font-wedding-1 text-cyan-100 w-20">
+                  <Text className="font-wedding-1 text-white w-20">
                     Romeo Montague
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-wedding-1 text-cyan-100">
+                  <Text className="text-xs font-wedding-1 text-white">
                     Son Of Lord Montague & Lady Montague
                   </Text>
                   <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
-                    <IconBrandFacebookFilled
-                      size={28}
-                      className="text-cyan-900"
-                    />
-                    <IconBrandTwitterFilled
-                      size={28}
-                      className="text-cyan-900"
-                    />
-                    <IconBrandInstagram size={28} className="stroke-cyan-900" />
+                    <IconBrandFacebookFilled size={28} className="text-white" />
+                    <IconBrandTwitterFilled size={28} className="text-white" />
+                    <IconBrandInstagram size={28} className="stroke-white" />
                   </Flex>
                 </Flex>
-                <Text className="text-cyan-900 text-4xl mt-16 font-pengantin-1">
+                <Text className="text-white text-4xl mt-16 font-pengantin-1">
                   &
                 </Text>
                 <Flex
@@ -112,23 +106,17 @@ export const BridgeGroom = () => {
                     src={paper}
                     alt="Groom"
                   />
-                  <Text className="font-wedding-1 text-cyan-100 w-20">
+                  <Text className="font-wedding-1 text-white w-20">
                     Juliet Capulet
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-wedding-1 text-cyan-100">
+                  <Text className="text-xs font-wedding-1 text-white">
                     Daughter Of Lord Capulet & Lady Capulet
                   </Text>
                   <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
-                    <IconBrandFacebookFilled
-                      size={28}
-                      className="text-cyan-900"
-                    />
-                    <IconBrandTwitterFilled
-                      size={28}
-                      className="text-cyan-900"
-                    />
-                    <IconBrandInstagram size={28} className="stroke-cyan-900" />
+                    <IconBrandFacebookFilled size={28} className="text-white" />
+                    <IconBrandTwitterFilled size={28} className="text-white" />
+                    <IconBrandInstagram size={28} className="stroke-white" />
                   </Flex>
                 </Flex>
               </Flex>

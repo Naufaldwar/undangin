@@ -3,11 +3,11 @@ import { IconVideo, IconWifi } from "@tabler/icons-react";
 
 export const Live = () => {
   return (
-    <Flex className="h-[500px] bg-cyan-900/70 backdrop-opacity-100 Flex flex-col text-center justify-start items-center p-4 rounded-b-full">
+    <Flex className="h-[500px] bg-cyan-900/70 backdrop-opacity-100 Flex flex-col text-center justify-start items-center p-4 rounded-b-full md:rounded-b-[300px]">
       <Flex direction={"column"} justify={"center"} gap={"md"}>
         <Flex direction={"column"} justify={"center"} align={"center"}>
           <IconWifi size={60} color="white" />
-          <Text className="font-lobster text-3xl text-white">
+          <Text className="font-merienda text-3xl text-white">
             Live Streaming
           </Text>
         </Flex>
@@ -18,7 +18,7 @@ export const Live = () => {
           orientation="horizontal"
           size={"lg"}
         />
-        <Text className="text-white font-lobster">
+        <Text className="text-white font-merienda">
           We will broadcast the wedding ceremony virtually
         </Text>
         <Button

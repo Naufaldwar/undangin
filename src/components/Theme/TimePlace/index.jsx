@@ -17,47 +17,47 @@ export const TimePlace = () => {
   return (
     <Container
       size={"xl"}
-      className="Flex Flex-col justify-center items-center"
+      className=" Flex Flex-col justify-center items-center"
     >
-      <motion.div
-        ref={timeRef}
-        initial="hidden"
-        animate={timeInView ? "visible" : "hidden"}
-        variants={timeAnimations}
-        transition={{ duration: 0.5 }}
-      >
-        <Flex direction={"column"} className="">
-          <Flex className="h-[500px] rounded-t-full bg-example-couple bg-cover bg-center">
+      <Flex direction={"column"} className="">
+        <motion.div
+          ref={timeRef}
+          initial="hidden"
+          animate={timeInView ? "visible" : "hidden"}
+          variants={timeAnimations}
+          transition={{ duration: 0.5 }}
+        >
+          <Flex className="h-[500px] rounded-t-full md:rounded-t-[300px] bg-example-couple bg-cover bg-center">
             <Flex
               direction={"column"}
               justify={"end"}
               style={{ backgroundColor: "rgba(125,125,125,0.4)" }}
-              className="text-center px-4 w-full h-[500px] rounded-t-full pb-4"
+              className="text-center px-4 w-full rounded-t-full md:rounded-t-[300px] pb-4"
               gap={"md"}
             >
-              <Text className="text-xl font-lobster text-white">
+              <Text className="text-xl font-merienda text-white">
                 Where & When
               </Text>
-              <Text className="text-3xl font-lobster font-bold text-white">
+              <Text className="text-3xl font-merienda font-bold text-white">
                 Wedding Day
               </Text>
               <Flex direction={"column"}>
-                <Text className="font-lugrasimo text-white">
+                <Text className="font-sansista text-white">
                   Gravitation is not responsible for people falling in love.
                 </Text>
-                <Text className="font-lugrasimo font-semibold text-white">
+                <Text className="font-sansista font-semibold text-white">
                   {`"Albert Einstein"`}
                 </Text>
               </Flex>
             </Flex>
           </Flex>
-          <Flex className="flex flex-col">
-            <Matrimony />
-            <Matrimony />
-          </Flex>
-          <Live />
+        </motion.div>
+        <Flex className="flex flex-col md:flex-row ">
+          <Matrimony />
+          <Matrimony />
         </Flex>
-      </motion.div>
+        <Live />
+      </Flex>
     </Container>
   );
 };

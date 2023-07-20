@@ -19,13 +19,15 @@ export const Title = () => {
           direction={"column"}
           gap={"md"}
         >
-          <Text className="font-wedding-1 mb-2 text-cyan-100 ">
+          <Text className="font-wedding-1 mb-2 text-white md:text-2xl ">
             The Wedding of
           </Text>
-          <Text className="text-cyan-100 text-2xl font-pengantin-1">
+          <Text className="text-white text-2xl font-pengantin-1 md:text-6xl">
             Adam & Hawa
           </Text>
-          <Text className="font-wedding-1 text-cyan-100 ">20.12.24</Text>
+          <Text className="font-wedding-1 text-white md:text-2xl md:mt-20">
+            20.12.24
+          </Text>
         </Flex>
       </BackgroundImage>
     </Flex>

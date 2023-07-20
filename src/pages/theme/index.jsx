@@ -7,6 +7,7 @@ import { BridgeGroom } from "../../components/Theme/BridgeGroom";
 import { Wave } from "@/components/Theme/Wave";
 import { Countdown } from "@/components/Theme/Countdown";
 import { TimePlace } from "@/components/Theme/TimePlace";
+import { LoveStory } from "@/components/Theme/LoveStory";
 export default function Example({ targetDate }) {
   return (
     <>
@@ -17,10 +18,12 @@ export default function Example({ targetDate }) {
         <Wave />
         <BridgeGroom />
       </Flex>
-      <BackgroundImage className="bg-paper-texture bg-repeat bg-contain px-4">
+
+      <BackgroundImage className="md:px-40 bg-paper-texture bg-repeat bg-fixed p-4">
         <Countdown targetDate={targetDate} suppressHydrationWarning />
         <TimePlace />
       </BackgroundImage>
+      <LoveStory />
     </>
   );
 }

@@ -62,46 +62,52 @@ export const Countdown = ({ targetDate }) => {
         justify={"center"}
         align={"center"}
         gap={"lg"}
-        className="font-lugrasimo py-10 text-cyan-900"
+        className="font-sansista py-10 text-cyan-900"
       >
         <Image src={bunga} alt="bunga" />
-        <Text className="text-center text-xl font-bold font-lugrasimo  text-cyan-900">
+        <Text className="text-center text-xl font-bold font-sansista  text-cyan-900">
           Countdown to
         </Text>
-        <Text className="text-center text-4xl font-bold font-lobster text-cyan-900">
+        <Text className="text-center text-4xl font-bold font-merienda text-cyan-900">
           Our Happy Day
         </Text>
-        <Flex gap={"lg"} className="font-lobster my-10">
+        <Flex className="font-merienda my-10 flex gap-4 lg:gap-40">
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
               {days}
             </Text>
-            <Text className="font-lobster text-cyan-900">Days</Text>
+            <Text className="font-merienda lg:text-xl text-cyan-900">Days</Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
               {hours}
             </Text>
-            <Text className="font-lobster text-cyan-900">Hours</Text>
+            <Text className="font-merienda lg:text-xl text-cyan-900">
+              Hours
+            </Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
               {minutes}
             </Text>
-            <Text className="font-lobster text-cyan-900">Minutes</Text>
+            <Text className="font-merienda lg:text-xl text-cyan-900">
+              Minutes
+            </Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl font-semibold font-lobster text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
               {seconds}
             </Text>
-            <Text className="font-lobster text-cyan-900">Seconds</Text>
+            <Text className="font-merienda lg:text-xl text-cyan-900">
+              Seconds
+            </Text>
           </Flex>
         </Flex>
         <Flex direction={"column"}>
-          <Text className="text-center font-lugrasimo  text-cyan-900">
+          <Text className="text-center font-sansista  text-cyan-900">
             The highest happiness on earth is the happiness of marriage.
           </Text>
-          <Text className="text-center font-semibold font-lugrasimo text-cyan-900">
+          <Text className="text-center font-semibold font-sansista text-cyan-900">
             {`"William Lyon Phelps"`}
           </Text>
         </Flex>

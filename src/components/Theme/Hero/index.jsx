@@ -84,7 +84,7 @@ export const Hero = () => {
                     variant="filled"
                     size="sm"
                     bg={"blue[6]"}
-                    className="bg-cyan-700 hover:bg-cyan-600"
+                    className="bg-cyan-900 hover:bg-cyan-800"
                     onClick={closeModal}
                   >
                     Buka Undangan
