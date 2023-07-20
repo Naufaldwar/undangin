@@ -15,6 +15,10 @@ module.exports = {
         "example-couple": "url('../assets/images/couple.jpg')",
       },
     },
+    fontFamily: {
+      merienda: ["Merienda", "cursive"],
+      sansista: ["Sansita Swashed", "cursive"],
+    },
   },
   plugins: [],
 };
