@@ -19,7 +19,7 @@ export default function Example({ targetDate }) {
         <BridgeGroom />
       </Flex>
 
-      <BackgroundImage className="md:px-40 bg-paper-texture bg-repeat bg-fixed p-4">
+      <BackgroundImage className="md:px-40 bg-paper-texture bg-repeat bg-contain p-4">
         <Countdown targetDate={targetDate} suppressHydrationWarning />
         <TimePlace />
       </BackgroundImage>
