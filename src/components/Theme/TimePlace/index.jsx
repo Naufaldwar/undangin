@@ -42,10 +42,10 @@ export const TimePlace = () => {
                 Wedding Day
               </Text>
               <Flex direction={"column"}>
-                <Text className="font-sansista text-white">
+                <Text className="font-nunito text-white">
                   Gravitation is not responsible for people falling in love.
                 </Text>
-                <Text className="font-sansista font-semibold text-white">
+                <Text className="font-nunito font-semibold text-white">
                   {`"Albert Einstein"`}
                 </Text>
               </Flex>

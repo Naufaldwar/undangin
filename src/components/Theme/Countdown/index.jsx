@@ -62,10 +62,10 @@ export const Countdown = ({ targetDate }) => {
         justify={"center"}
         align={"center"}
         gap={"lg"}
-        className="font-sansista py-10 text-cyan-900"
+        className="font-nunito py-10 text-cyan-900"
       >
         <Image src={bunga} alt="bunga" />
-        <Text className="text-center text-xl font-bold font-sansista  text-cyan-900">
+        <Text className="text-center text-xl font-bold font-nunito  text-cyan-900">
           Countdown to
         </Text>
         <Text className="text-center text-4xl font-bold font-merienda text-cyan-900">
@@ -104,10 +104,10 @@ export const Countdown = ({ targetDate }) => {
           </Flex>
         </Flex>
         <Flex direction={"column"}>
-          <Text className="text-center font-sansista  text-cyan-900">
+          <Text className="text-center font-nunito  text-cyan-900">
             The highest happiness on earth is the happiness of marriage.
           </Text>
-          <Text className="text-center font-semibold font-sansista text-cyan-900">
+          <Text className="text-center font-semibold font-nunito text-cyan-900">
             {`"William Lyon Phelps"`}
           </Text>
         </Flex>

@@ -16,8 +16,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      merienda: ["Merienda", "cursive"],
-      sansista: ["Sansita Swashed", "cursive"],
+      // merienda: ["Merienda", "cursive"],
+      // nunito: ["Sansita Swashed", "cursive"],
+      // nunito: ["Nunito", "sans-serif"],
     },
   },
   plugins: [],
