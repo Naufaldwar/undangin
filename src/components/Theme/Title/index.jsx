@@ -22,7 +22,7 @@ export const Title = () => {
           <Text className="font-nunito mb-2 text-white md:text-2xl ">
             The Wedding of
           </Text>
-          <Text className="text-white text-2xl font-merienda md:text-6xl">
+          <Text className="text-white text-2xl font-nunito font-bold md:text-6xl">
             Adam & Hawa
           </Text>
           <Text className="font-nunito text-white md:text-2xl md:mt-20">

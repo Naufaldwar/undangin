@@ -11,10 +11,9 @@
   /* .font-merienda {
     font-family: "Merienda", cursive;
   } */
-
-  .font-nunito {
-    font-family: "Nunito", sans-serif;
-  }
+}
+.font-nunito {
+  font-family: "Nunito", sans-serif;
 }
 
 .modal {
