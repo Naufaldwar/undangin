@@ -55,6 +55,7 @@ export const Hero = () => {
                   align={"center"}
                   gap={"lg"}
                   direction={"column"}
+                  className="h-screen w-screen"
                 >
                   <IconX
                     className="absolute top-10 right-10 hover:cursor-pointer bg-cyan-700 hover:bg-cyan-600 rounded-md"
