@@ -64,19 +64,19 @@ export const Hero = () => {
                   <Flex className="rounded-full h-40 w-40">
                     <Image src={paper} alt="pic" className="rounded-full" />
                   </Flex>
-                  <Text className="font-wedding-1 text-cyan-100 text-lg">
+                  <Text className="font-sansista text-cyan-100 text-lg">
                     The Wedding Of
                   </Text>
-                  <Text className="text-cyan-100 text-3xl font-pengantin-1">
+                  <Text className="text-cyan-100 text-3xl font-merienda">
                     Adam & Hawa
                   </Text>
-                  <Text className="text-slate-100 font-wedding-1">
+                  <Text className="text-slate-100 font-sansista">
                     Dear Mr./ Mrs./ Ms.
                   </Text>
-                  <Text className="text-slate-100 text-lg font-wedding-1">
+                  <Text className="text-slate-100 text-lg font-sansista">
                     Naufal Dwi Ariananto
                   </Text>
-                  <Text className="font-wedding-1 text-center text-cyan-100">
+                  <Text className="font-sansista text-center text-cyan-100">
                     You are cordially invited to our wedding.
                   </Text>
                   <Button

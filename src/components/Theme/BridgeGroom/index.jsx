@@ -36,17 +36,17 @@ export const BridgeGroom = () => {
             className="bg-cyan-900"
             gap={"md"}
           >
-            <Text className="font-wedding-1 text-white text-lg">
+            <Text className="font-sansista text-white text-lg">
               The Beloved
             </Text>
-            <Text className="font-wedding-1 text-white text-xl">
+            <Text className="font-sansista text-white text-xl">
               Groom & Bride
             </Text>
-            <Text className="text-center font-wedding-1 text-sm text-white ">
+            <Text className="text-center font-sansista text-sm text-white ">
               Once in awhile, right in the middle of an ordinary life, love
               gives us a fairy tale.
             </Text>
-            <Text className="font-wedding-1 text-white">Unknown</Text>
+            <Text className="font-sansista text-white">Unknown</Text>
             <motion.div
               ref={ref}
               className="w-full"
@@ -67,7 +67,7 @@ export const BridgeGroom = () => {
                   align={"center"}
                   gap={"md"}
                 >
-                  <Text className="absolute pb-36 font-wedding-1 text-cyan-900">
+                  <Text className="absolute pb-36 font-sansista text-cyan-900">
                     Romeo
                   </Text>
                   <Image
@@ -75,11 +75,11 @@ export const BridgeGroom = () => {
                     src={paper}
                     alt="Groom"
                   />
-                  <Text className="font-wedding-1 text-white w-20">
+                  <Text className="font-sansista text-white w-20">
                     Romeo Montague
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-wedding-1 text-white">
+                  <Text className="text-xs font-sansista text-white">
                     Son Of Lord Montague & Lady Montague
                   </Text>
                   <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
@@ -88,7 +88,7 @@ export const BridgeGroom = () => {
                     <IconBrandInstagram size={28} className="stroke-white" />
                   </Flex>
                 </Flex>
-                <Text className="text-white text-4xl mt-16 font-pengantin-1">
+                <Text className="text-white text-4xl mt-16 font-merienda">
                   &
                 </Text>
                 <Flex
@@ -98,7 +98,7 @@ export const BridgeGroom = () => {
                   align={"center"}
                   gap={"md"}
                 >
-                  <Text className="absolute pb-36 font-wedding-1 text-cyan-900">
+                  <Text className="absolute pb-36 font-sansista text-cyan-900">
                     Juliet
                   </Text>
                   <Image
@@ -106,11 +106,11 @@ export const BridgeGroom = () => {
                     src={paper}
                     alt="Groom"
                   />
-                  <Text className="font-wedding-1 text-white w-20">
+                  <Text className="font-sansista text-white w-20">
                     Juliet Capulet
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-wedding-1 text-white">
+                  <Text className="text-xs font-sansista text-white">
                     Daughter Of Lord Capulet & Lady Capulet
                   </Text>
                   <Flex wrap={"wrap"} className="gap-4" justify={"center"}>

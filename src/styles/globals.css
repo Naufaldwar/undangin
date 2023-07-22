@@ -11,18 +11,10 @@
 
   .font-sansista {
     font-family: "Sansita Swashed", cursive;
-    /* color: blue; */
   }
 }
 
-.font-pengantin-1 {
-  font-family: "Dancing Script", cursive;
-}
-
-.font-wedding-1 {
-  font-family: "Great Vibes", cursive;
-}
-.modal {
+*/ .modal {
   position: fixed;
   top: 0;
   left: 0;
