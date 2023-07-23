@@ -68,7 +68,7 @@ export const Hero = () => {
                   <Text className="font-nunito text-cyan-100 text-lg">
                     The Wedding Of
                   </Text>
-                  <Text className="text-cyan-100 text-3xl font-merienda">
+                  <Text className="text-cyan-100 text-3xl font-nunito">
                     Adam & Hawa
                   </Text>
                   <Text className="text-slate-100 font-nunito">

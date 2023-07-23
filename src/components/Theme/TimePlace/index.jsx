@@ -35,10 +35,10 @@ export const TimePlace = () => {
               className="text-center px-4 w-full rounded-t-full md:rounded-t-[300px] pb-4"
               gap={"md"}
             >
-              <Text className="text-xl font-merienda text-white">
+              <Text className="text-xl font-nunito text-white">
                 Where & When
               </Text>
-              <Text className="text-3xl font-merienda font-bold text-white">
+              <Text className="text-3xl font-nunito font-bold text-white">
                 Wedding Day
               </Text>
               <Flex direction={"column"}>

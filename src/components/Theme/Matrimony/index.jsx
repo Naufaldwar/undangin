@@ -24,7 +24,7 @@ export const Matrimony = () => {
           <Flex direction={"column"} justify={"center"} gap={"md"}>
             <Flex direction={"column"} justify={"center"} align={"center"}>
               <IconHearts size={60} color="white" />
-              <Text className="font-merienda text-3xl text-white">
+              <Text className="font-nunito text-3xl text-white">
                 Holy Matrimony
               </Text>
             </Flex>
@@ -39,7 +39,7 @@ export const Matrimony = () => {
               <Flex>
                 <IconCalendar color="white" />
               </Flex>
-              <Text className="text-white font-merienda">
+              <Text className="text-white font-nunito">
                 Sunday, 31 December 2023
               </Text>
             </Flex>
@@ -47,15 +47,13 @@ export const Matrimony = () => {
               <Flex>
                 <IconClock color="white" />
               </Flex>
-              <Text className="text-white font-merienda">
-                10.00 - 12.00 WIB
-              </Text>
+              <Text className="text-white font-nunito">10.00 - 12.00 WIB</Text>
             </Flex>
             <Flex align={"center"} className="text-left" gap={"md"}>
               <Flex>
                 <IconMapPin color="white" />
               </Flex>
-              <Text className="text-white font-merienda">
+              <Text className="text-white font-nunito">
                 <b>Shangri-La Hotel Jakarta</b>
                 <br />
                 Jl. Jenderal Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah

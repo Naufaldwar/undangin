@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
             ],
           },
           primaryColor: "blue",
-          // fontFamily: "Poppins, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           fontSizes: {
             xs: "0.75rem",
             sm: "0.875rem",

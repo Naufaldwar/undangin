@@ -11,14 +11,14 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "paper-texture": "url('../assets/images/arabesque.png')",
+        "paper-texture": "url('../assets/images/paper.png')",
         "example-couple": "url('../assets/images/couple.jpg')",
       },
     },
     fontFamily: {
       // merienda: ["Merienda", "cursive"],
-      // nunito: ["Sansita Swashed", "cursive"],
-      // nunito: ["Nunito", "sans-serif"],
+      // sansita: ["Sansita Swashed", "cursive"],
+      // sansita: ["sansita", "sans-serif"],
     },
   },
   plugins: [],

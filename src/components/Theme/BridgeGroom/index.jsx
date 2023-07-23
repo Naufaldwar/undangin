@@ -86,9 +86,7 @@ export const BridgeGroom = () => {
                     <IconBrandInstagram size={28} className="stroke-white" />
                   </Flex>
                 </Flex>
-                <Text className="text-white text-4xl mt-16 font-merienda">
-                  &
-                </Text>
+                <Text className="text-white text-4xl mt-16 font-nunito">&</Text>
                 <Flex
                   direction={"column"}
                   className=" w-36 text-center static"

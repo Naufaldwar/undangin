@@ -7,7 +7,7 @@ export const Live = () => {
       <Flex direction={"column"} justify={"center"} gap={"md"}>
         <Flex direction={"column"} justify={"center"} align={"center"}>
           <IconWifi size={60} color="white" />
-          <Text className="font-merienda text-3xl text-white">
+          <Text className="font-nunito text-3xl text-white">
             Live Streaming
           </Text>
         </Flex>
@@ -18,7 +18,7 @@ export const Live = () => {
           orientation="horizontal"
           size={"lg"}
         />
-        <Text className="text-white font-merienda">
+        <Text className="text-white font-nunito">
           We will broadcast the wedding ceremony virtually
         </Text>
         <Button

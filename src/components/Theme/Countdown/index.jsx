@@ -68,37 +68,35 @@ export const Countdown = ({ targetDate }) => {
         <Text className="text-center text-xl font-bold font-nunito  text-cyan-900">
           Countdown to
         </Text>
-        <Text className="text-center text-4xl font-bold font-merienda text-cyan-900">
+        <Text className="text-center text-4xl font-bold font-nunito text-cyan-900">
           Our Happy Day
         </Text>
-        <Flex className="font-merienda my-10 flex gap-4 lg:gap-40">
+        <Flex className="font-nunito my-10 flex gap-4 lg:gap-40">
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
               {days}
             </Text>
-            <Text className="font-merienda lg:text-xl text-cyan-900">Days</Text>
+            <Text className="font-nunito lg:text-xl text-cyan-900">Days</Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
               {hours}
             </Text>
-            <Text className="font-merienda lg:text-xl text-cyan-900">
-              Hours
-            </Text>
+            <Text className="font-nunito lg:text-xl text-cyan-900">Hours</Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
               {minutes}
             </Text>
-            <Text className="font-merienda lg:text-xl text-cyan-900">
+            <Text className="font-nunito lg:text-xl text-cyan-900">
               Minutes
             </Text>
           </Flex>
           <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-merienda text-cyan-900">
+            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
               {seconds}
             </Text>
-            <Text className="font-merienda lg:text-xl text-cyan-900">
+            <Text className="font-nunito lg:text-xl text-cyan-900">
               Seconds
             </Text>
           </Flex>
