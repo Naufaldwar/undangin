@@ -13,6 +13,8 @@ export const Audio = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const [onPause, setOnPause] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+
   const handlePlayPause = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -24,13 +26,35 @@ export const Audio = () => {
     setIsPlaying(!isPlaying);
   };
 
+  const handleUserInteraction = () => {
+    if (!hasInteracted) {
+      setHasInteracted(true);
+      // Mulai pemutaran audio setelah interaksi pengguna
+      audioRef.current.play().catch((error) => {
+        console.log("autoplay error:", error);
+        // Manajemen kesalahan jika autoplay gagal
+      });
+    }
+  };
+
   useEffect(() => {
-    if (inView) {
-      audioRef.current.play();
+    if (inView && hasInteracted) {
+      audioRef.current.play().catch((error) => {
+        console.log("autoplay error:", error);
+        // Manajemen kesalahan jika autoplay gagal
+      });
     } else {
       audioRef.current.pause();
     }
-  }, [inView]);
+
+    // Add an event listener for user interaction
+    document.addEventListener("click", handleUserInteraction);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("click", handleUserInteraction);
+    };
+  }, [inView, hasInteracted]);
 
   return (
     <Flex className="sticky top-0 z-50">
@@ -53,10 +77,9 @@ export const Audio = () => {
           </Box>
           <audio
             ref={audioRef}
-            autoPlay
+            autoPlay={false} // Jangan autoplay secara otomatis
             src="https://apiyoutube.cc/m4a/IGhgrKEe6Pj::fbc9ea9732a6b55f48be54eba8f4fb71::1690096592::no::di"
           />
-          {/* <audio src={sanes} autoPlay={true} controls /> */}
         </motion.div>
       </AnimatePresence>
     </Flex>

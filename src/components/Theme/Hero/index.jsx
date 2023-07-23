@@ -48,7 +48,7 @@ export const Hero = () => {
                 animate="visible"
                 exit="exit" // Gunakan animasi exit untuk slide down saat modal tertutup
                 variants={heroAnimations}
-                transition={{ duration: 1 }}
+                transition={{ duration: 2 }}
               >
                 <Flex
                   justify={"center"}
