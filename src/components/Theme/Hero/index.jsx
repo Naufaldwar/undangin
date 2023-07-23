@@ -6,9 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import paper from "../../../assets/images/paper.png";
 
-export const Hero = () => {
+export const Hero = ({ bridenickname, groomnickname, guest }) => {
   const [isOpen, setIsOpen] = useState(true);
 
+  console.log(bridenickname, groomnickname, guest);
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -69,13 +70,13 @@ export const Hero = () => {
                     The Wedding Of
                   </Text>
                   <Text className="text-cyan-100 text-3xl font-nunito">
-                    Adam & Hawa
+                    {groomnickname} & {bridenickname}
                   </Text>
                   <Text className="text-slate-100 font-nunito">
                     Dear Mr./ Mrs./ Ms.
                   </Text>
                   <Text className="text-slate-100 text-lg font-nunito">
-                    Naufal Dwi Ariananto
+                    {guest}
                   </Text>
                   <Text className="font-nunito text-center text-cyan-100">
                     You are cordially invited to our wedding.

@@ -92,4 +92,36 @@ const datatesti = [
   },
 ];
 
-export { datafitur, datatesti };
+const datacustomer1 = {
+  bride_full_name: "Ikhda Miftakhul Ulumi",
+  groom_full_name: "Naufal Dwi Ariananto",
+  bride_nick_name: "Ikhda",
+  groom_nick_name: "Naufal",
+  bride_father_name: "Imam Budi Santoso",
+  groom_father_name: "Sudarto",
+  bride_mother_name: "Titiek Yulianti",
+  groom_mother_name: "Anita Ariani",
+  date_married: new Date("2023-07-25T00:00:00").toISOString(),
+  bride_fb: "https://www.facebook.com/ikhda.miftakhululumii",
+  groom_fb: "https://www.facebook.com/naufal.dwiarianano",
+  bride_ig: "https://www.instagram.com/ikhda_miftakhul/",
+  groom_ig: "https://www.instagram.com/naufal_dwiariananto/",
+  bride_twitter: "https://twitter.com/ikhda_miftakhul",
+  groom_twitter: "https://twitter.com/naufal_dwi",
+  date_matrimony: "Sunday, 31 December 2023",
+  time_matrimony: "10:00 AM - 12:00 PM",
+  place_matrimony: "Masjid Al-Ikhlas",
+  address_matrimony:
+    "Jl. Raya Kedungmundu No. 1, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273",
+  date_reception: "Sunday, 31 December 2023",
+  time_reception: "12:00 PM - 14:00 PM",
+  place_reception: "Gedung Serbaguna",
+  address_reception:
+    "Jl. Raya Kedungmundu No. 1, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273",
+  matrimony_maps: "https://goo.gl/maps/snAJX2CqtWsCwyJW9",
+  matrimony_calendar: "https://calendar.app.google/8NxPbhwywZv2v7Ca8",
+  reception_calendar: "https://calendar.app.google/8NxPbhwywZv2v7Ca8",
+  reception_maps: "https://goo.gl/maps/snAJX2CqtWsCwyJW9",
+  link_streming: "https://www.youtube.com/embed/6v2L2UGZJAM",
+};
+export { datafitur, datatesti, datacustomer1 };

@@ -1,6 +1,27 @@
 import { BackgroundImage, Flex, Text } from "@mantine/core";
 
-export const Title = () => {
+export const Title = ({ groomnickname, bridenickname, date }) => {
+  // Fungsi untuk mengubah format tanggal menjadi "dd.MM.yy"
+  const formatDate = (inputDate) => {
+    const date = new Date(inputDate);
+    const day = date.getUTCDate();
+    const month = date.getUTCMonth() + 1; // Tambahkan 1 karena bulan dimulai dari 0 (Januari)
+    const year = date.getUTCFullYear() % 100; // Ambil dua digit terakhir tahun
+
+    // Fungsi untuk menambahkan angka 0 pada bilangan bulat satu digit
+    const addLeadingZero = (number) => {
+      return number < 10 ? `0${number}` : number;
+    };
+
+    const formattedDate = `${addLeadingZero(day)}.${addLeadingZero(
+      month
+    )}.${addLeadingZero(year)}`;
+
+    return formattedDate;
+  };
+
+  const formattedDate = formatDate(date);
+
   return (
     <Flex
       className="h-screen sticky top-0 -z-50"
@@ -23,10 +44,10 @@ export const Title = () => {
             The Wedding of
           </Text>
           <Text className="text-white text-2xl font-nunito font-bold md:text-6xl">
-            Adam & Hawa
+            {groomnickname} & {bridenickname}
           </Text>
           <Text className="font-nunito text-white md:text-2xl md:mt-20">
-            20.12.24
+            {formattedDate}
           </Text>
         </Flex>
       </BackgroundImage>

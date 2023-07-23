@@ -4,8 +4,9 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { Matrimony } from "../Matrimony";
 import { Live } from "../Live";
+import { Reception } from "../Reception";
 
-export const TimePlace = () => {
+export const TimePlace = ({ date, time, place, address, map, calendar }) => {
   const [timeRef, timeInView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -53,8 +54,22 @@ export const TimePlace = () => {
           </Flex>
         </motion.div>
         <Flex className="flex flex-col md:flex-row ">
-          <Matrimony />
-          <Matrimony />
+          <Matrimony
+            address={address[0]}
+            date={date[0]}
+            place={place[0]}
+            time={time[0]}
+            map={map[0]}
+            calendar={calendar[0]}
+          />
+          <Reception
+            address={address[1]}
+            date={date[1]}
+            place={place[1]}
+            time={time[1]}
+            map={map[1]}
+            calendar={calendar[1]}
+          />
         </Flex>
         <Live />
       </Flex>

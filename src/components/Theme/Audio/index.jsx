@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import ReactAudioPlayer from "react-audio-player";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef, useState } from "react";
 import { IconMusic, IconMusicOff } from "@tabler/icons-react";
@@ -77,6 +76,7 @@ export const Audio = () => {
           </Box>
           <audio
             ref={audioRef}
+            loop
             autoPlay={false} // Jangan autoplay secara otomatis
             src="https://apiyoutube.cc/m4a/IGhgrKEe6Pj::fbc9ea9732a6b55f48be54eba8f4fb71::1690096592::no::di"
           />

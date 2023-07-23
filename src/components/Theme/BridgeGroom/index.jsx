@@ -4,17 +4,26 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import paper from "../../../assets/images/paper.png";
 import {
-  IconBrandFacebook,
   IconBrandFacebookFilled,
   IconBrandInstagram,
-  IconBrandTwitter,
 } from "@tabler/icons-react";
 import { IconBrandTwitterFilled } from "@tabler/icons-react";
-export const BridgeGroom = () => {
+import Link from "next/link";
+export const BridgeGroom = ({
+  groomnickname,
+  bridenickname,
+  groomfullname,
+  bridefullname,
+  groomparents,
+  brideparents,
+  groomsocmed,
+  bridesocmed,
+}) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-
+  console.log(groomnickname, bridenickname, groomfullname, bridefullname);
+  console.log(brideparents);
   return (
     <div
       className="bg-cyan-900"
@@ -65,8 +74,8 @@ export const BridgeGroom = () => {
                   align={"center"}
                   gap={"md"}
                 >
-                  <Text className="absolute pb-36 font-nunito text-cyan-900">
-                    Romeo
+                  <Text className="absolute pb-72 font-semibold font-nunito text-cyan-900">
+                    {groomnickname}
                   </Text>
                   <Image
                     className="rounded-full h-40 w-36 object-none"
@@ -74,16 +83,38 @@ export const BridgeGroom = () => {
                     alt="Groom"
                   />
                   <Text className="font-nunito text-white w-20">
-                    Romeo Montague
+                    {groomfullname}
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-nunito text-white">
-                    Son Of Lord Montague & Lady Montague
-                  </Text>
-                  <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
-                    <IconBrandFacebookFilled size={28} className="text-white" />
-                    <IconBrandTwitterFilled size={28} className="text-white" />
-                    <IconBrandInstagram size={28} className="stroke-white" />
+                  <Flex
+                    justify={"space-between"}
+                    direction={"column"}
+                    className="h-40"
+                  >
+                    <Text className="text-xs font-nunito text-white">
+                      Son Of Lord {groomparents[0]} & Lady {groomparents[1]}
+                    </Text>
+                    <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
+                      <Link href={groomsocmed[0]} target="_blank">
+                        <IconBrandFacebookFilled
+                          size={28}
+                          className="text-white"
+                        />
+                      </Link>
+
+                      <Link href={groomsocmed[2]} target="_blank">
+                        <IconBrandTwitterFilled
+                          size={28}
+                          className="text-white"
+                        />
+                      </Link>
+                      <Link href={groomsocmed[1]} target="_blank">
+                        <IconBrandInstagram
+                          size={28}
+                          className="stroke-white"
+                        />
+                      </Link>
+                    </Flex>
                   </Flex>
                 </Flex>
                 <Text className="text-white text-4xl mt-16 font-nunito">&</Text>
@@ -94,8 +125,8 @@ export const BridgeGroom = () => {
                   align={"center"}
                   gap={"md"}
                 >
-                  <Text className="absolute pb-36 font-nunito text-cyan-900">
-                    Juliet
+                  <Text className="absolute pb-72 font-semibold font-nunito text-cyan-900">
+                    {bridenickname}
                   </Text>
                   <Image
                     className="rounded-full h-40 w-36 object-none"
@@ -103,16 +134,38 @@ export const BridgeGroom = () => {
                     alt="Groom"
                   />
                   <Text className="font-nunito text-white w-20">
-                    Juliet Capulet
+                    {bridefullname}
                   </Text>
                   <Divider className="w-20 my-1" />
-                  <Text className="text-xs font-nunito text-white">
-                    Daughter Of Lord Capulet & Lady Capulet
-                  </Text>
-                  <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
-                    <IconBrandFacebookFilled size={28} className="text-white" />
-                    <IconBrandTwitterFilled size={28} className="text-white" />
-                    <IconBrandInstagram size={28} className="stroke-white" />
+                  <Flex
+                    justify={"space-between"}
+                    direction={"column"}
+                    className="h-40"
+                  >
+                    <Text className="text-xs font-nunito text-white">
+                      Daughter Of Lord {brideparents[0]} & Lady{" "}
+                      {brideparents[1]}
+                    </Text>
+                    <Flex wrap={"wrap"} className="gap-4" justify={"center"}>
+                      <Link href={bridesocmed[0]} target="_blank">
+                        <IconBrandFacebookFilled
+                          size={28}
+                          className="text-white"
+                        />
+                      </Link>
+                      <Link href={bridesocmed[2]} target="_blank">
+                        <IconBrandTwitterFilled
+                          size={28}
+                          className="text-white"
+                        />
+                      </Link>
+                      <Link href={bridesocmed[1]} target="_blank">
+                        <IconBrandInstagram
+                          size={28}
+                          className="stroke-white"
+                        />
+                      </Link>
+                    </Flex>
                   </Flex>
                 </Flex>
               </Flex>

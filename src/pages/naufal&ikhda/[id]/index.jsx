@@ -10,7 +10,7 @@ import { BackgroundImage, Flex } from "@mantine/core";
 import { datacustomer1 } from "@/assets/data";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-export default function theme() {
+export default function Tamu() {
   const data = datacustomer1;
   const router = useRouter();
   const [name, setName] = useState("");

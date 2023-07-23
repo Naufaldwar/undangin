@@ -2,6 +2,7 @@ import { Button, Divider, Flex, Text } from "@mantine/core";
 import {
   IconCalendar,
   IconClock,
+  IconCoffee,
   IconHearts,
   IconMapPin,
 } from "@tabler/icons-react";
@@ -9,7 +10,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export const Matrimony = ({ date, time, place, address, map, calendar }) => {
+export const Reception = ({ date, address, place, time, map, calendar }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -24,9 +25,9 @@ export const Matrimony = ({ date, time, place, address, map, calendar }) => {
         <Flex className="bg-cyan-900/70 text-sm backdrop-opacity-100 Flex flex-col text-center justify-center items-center p-4 md:p-20">
           <Flex direction={"column"} justify={"center"} gap={"md"}>
             <Flex direction={"column"} justify={"center"} align={"center"}>
-              <IconHearts size={60} color="white" />
+              <IconCoffee size={60} color="white" />
               <Text className="font-nunito text-3xl text-white">
-                Holy Matrimony
+                Wedding Reception
               </Text>
             </Flex>
             <Divider
