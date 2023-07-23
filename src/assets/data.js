@@ -124,4 +124,35 @@ const datacustomer1 = {
   reception_maps: "https://goo.gl/maps/snAJX2CqtWsCwyJW9",
   link_streming: "https://www.youtube.com/embed/6v2L2UGZJAM",
 };
-export { datafitur, datatesti, datacustomer1 };
+
+const dataexample = {
+  bride_full_name: "Juliet Capulet",
+  groom_full_name: "Romeo Montague",
+  bride_nick_name: "Juliet",
+  groom_nick_name: "Romeo",
+  bride_father_name: "Capulet",
+  groom_father_name: "Montague",
+  bride_mother_name: "Capulet",
+  groom_mother_name: "Montague",
+  date_married: new Date("2023-07-25T00:00:00").toISOString(),
+  bride_fb: "https://www.facebook.com/juliet.capulet",
+  groom_fb: "https://www.facebook.com/romeo.montague",
+  bride_ig: "https://www.instagram.com/juliet_capulet/",
+  groom_ig: "https://www.instagram.com/romeo_montague/",
+  bride_twitter: "https://twitter.com/juliet_capulet",
+  groom_twitter: "https://twitter.com/romeo_montague",
+  date_matrimony: "Sunday, 31 December 2023",
+  time_matrimony: "10:00 AM - 12:00 PM",
+  place_matrimony: "St. Peter's Church",
+  address_matrimony: "St. Peter's Church, 136 Clerkenwell Rd, London EC1R 5DL",
+  date_reception: "Sunday, 31 December 2023",
+  time_reception: "12:00 PM - 14:00 PM",
+  place_reception: "The Ritz London",
+  address_reception: "150 Piccadilly, St. James's, London W1J 9BR",
+  matrimony_maps: "https://goo.gl/maps/o7LsroXgHhCwaFMZ7",
+  matrimony_calendar: "https://calendar.app.google/8NxPbhwywZv2v7Ca8",
+  reception_calendar: "https://calendar.app.google/8NxPbhwywZv2v7Ca8",
+  reception_maps: "https://goo.gl/maps/o7LsroXgHhCwaFMZ7",
+  link_streming: "https://www.youtube.com/embed/6v2L2UGZJAM",
+};
+export { datafitur, datatesti, datacustomer1, dataexample };

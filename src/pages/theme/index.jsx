@@ -7,11 +7,11 @@ import { TimePlace } from "@/components/Theme/TimePlace";
 import { Title } from "@/components/Theme/Title";
 import { Wave } from "@/components/Theme/Wave";
 import { BackgroundImage, Flex } from "@mantine/core";
-import { datacustomer1 } from "@/assets/data";
+import { dataexample } from "@/assets/data";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 export default function Theme() {
-  const data = datacustomer1;
+  const data = dataexample;
   const router = useRouter();
   const [name, setName] = useState("");
 
