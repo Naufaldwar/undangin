@@ -134,7 +134,7 @@ const dataexample = {
   groom_father_name: "Montague",
   bride_mother_name: "Capulet",
   groom_mother_name: "Montague",
-  date_married: new Date("2023-07-25T00:00:00Z").toISOString(),
+  date_married: new Date("2023-12-25T00:00:00Z").toISOString(),
   bride_fb: "https://www.facebook.com/juliet.capulet",
   groom_fb: "https://www.facebook.com/romeo.montague",
   bride_ig: "https://www.instagram.com/juliet_capulet/",

@@ -43,7 +43,7 @@ export const Variants = () => {
         <Container className={classes.bg}>
           <Image alt="image" src={example} className={classes.image} />
           <div>
-            <Link href="/theme">
+            <Link href="/theme1/nama%20tamu">
               <Button variant="outline">Lihat Template</Button>
             </Link>
           </div>

@@ -22,19 +22,27 @@ export const TimePlace = ({ date, time, place, address, map, calendar }) => {
     >
       <Flex direction={"column"} className="">
         <motion.div
+          className="h-[500px] rounded-t-full md:rounded-t-[300px] bg-example-couple bg-cover bg-center flex"
           ref={timeRef}
           initial="hidden"
           animate={timeInView ? "visible" : "hidden"}
           variants={timeAnimations}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 2 }}
         >
-          <Flex className="h-[500px] rounded-t-full md:rounded-t-[300px] bg-example-couple bg-cover bg-center">
-            <Flex
-              direction={"column"}
-              justify={"end"}
-              style={{ backgroundColor: "rgba(125,125,125,0.4)" }}
-              className="text-center px-4 w-full rounded-t-full md:rounded-t-[300px] pb-4"
-              gap={"md"}
+          <Flex
+            direction={"column"}
+            justify={"end"}
+            style={{ backgroundColor: "rgba(125,125,125,0.4)" }}
+            className="text-center px-4 w-full rounded-t-full md:rounded-t-[300px] pb-4"
+            gap={"md"}
+          >
+            <motion.div
+              className="flex flex-col justify-end gap-4"
+              ref={timeRef}
+              initial="hidden"
+              animate={timeInView ? "visible" : "hidden"}
+              variants={timeAnimations}
+              transition={{ duration: 2 }}
             >
               <Text className="text-xl font-nunito text-white">
                 Where & When
@@ -50,7 +58,7 @@ export const TimePlace = ({ date, time, place, address, map, calendar }) => {
                   {`"Albert Einstein"`}
                 </Text>
               </Flex>
-            </Flex>
+            </motion.div>
           </Flex>
         </motion.div>
         <Flex className="w-full flex flex-col lg:flex-row ">

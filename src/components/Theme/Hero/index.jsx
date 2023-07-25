@@ -35,7 +35,7 @@ export const Hero = ({ bridenickname, groomnickname, guest }) => {
             animate="visible"
             exit="exit"
             variants={heroAnimations}
-            transition={{ duration: 1 }}
+            transition={{ duration: 3 }}
           >
             <Flex className="modal-overlay">
               <motion.div
@@ -48,7 +48,7 @@ export const Hero = ({ bridenickname, groomnickname, guest }) => {
                 animate="visible"
                 exit="exit" // Gunakan animasi exit untuk slide down saat modal tertutup
                 variants={heroAnimations}
-                transition={{ duration: 2 }}
+                transition={{ duration: 3 }}
               >
                 <Flex
                   justify={"center"}

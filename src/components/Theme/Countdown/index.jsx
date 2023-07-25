@@ -62,7 +62,7 @@ export const Countdown = ({ targetDate }) => {
       initial="hidden"
       animate={countInView ? "visible" : "hidden"}
       variants={countAnimations}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 2, delay: 0.5 }}
     >
       <Flex
         direction={"column"}
