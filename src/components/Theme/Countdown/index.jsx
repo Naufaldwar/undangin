@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 export const Countdown = ({ targetDate }) => {
   const isClient = typeof window !== "undefined"; // Memeriksa apakah kode berjalan di lingkungan klien
   const [client, setClient] = useState(false);
-  console.log(targetDate);
   const [countdownFinished, setCountdownFinished] = useState(false); // State variable to track if countdown finished
 
   const countDownDate = new Date(targetDate).getTime();
@@ -82,7 +81,7 @@ export const Countdown = ({ targetDate }) => {
         {countdownFinished ? (
           <>
             <Text className="text-center text-4xl font-bold font-nunito text-cyan-900">
-              Time's up! Congratulations on your special day!
+              {`Time's up! Congratulations on your special day!`}
             </Text>
             <Flex className="font-nunito my-10 flex gap-4 lg:gap-40">
               <Flex direction={"column"} justify={"center"} align={"center"}>
