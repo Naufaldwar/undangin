@@ -9,7 +9,6 @@ import paper from "../../../assets/images/paper.png";
 export const Hero = ({ bridenickname, groomnickname, guest }) => {
   const [isOpen, setIsOpen] = useState(true);
 
-  console.log(bridenickname, groomnickname, guest);
   const closeModal = () => {
     setIsOpen(false);
   };

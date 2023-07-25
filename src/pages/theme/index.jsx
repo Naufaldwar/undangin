@@ -11,7 +11,7 @@ import { dataexample } from "@/assets/data";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 export default function Theme() {
-  const data = dataexample;
+  const [data, setData] = useState(dataexample);
   const router = useRouter();
   const [name, setName] = useState("");
 
@@ -30,9 +30,8 @@ export default function Theme() {
       return match.toUpperCase();
     });
   };
-
-  console.log(data);
-  console.log(name); // Output: budi
+  console.log(data.date_married);
+  // Output: budi
   return (
     <>
       {data && (

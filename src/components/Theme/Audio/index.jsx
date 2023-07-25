@@ -78,7 +78,7 @@ export const Audio = () => {
             ref={audioRef}
             loop
             autoPlay={false} // Jangan autoplay secara otomatis
-            src="https://apiyoutube.cc/m4a/IGhgrKEe6Pj::fbc9ea9732a6b55f48be54eba8f4fb71::1690096592::no::di"
+            src="https://apiyoutube.cc/m4a/IGhgrKEe6Pj::8fbd7eb143657d853372c2d04ba11e9b::1690272477::no::di"
           />
         </motion.div>
       </AnimatePresence>

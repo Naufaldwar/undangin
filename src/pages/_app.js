@@ -12,13 +12,13 @@ export default function App({ Component, pageProps }) {
           // colorScheme: "light",
           colors: {
             blue: [
-              "#a2d1d7",
-              "#84c1ca",
-              "#65b2bd",
-              "#46a2b0",
-              "#2793a2",
-              "#05BFDB",
-              "#088395", // The Real Primary Color
+              "#4dd0e1",
+              "#26c6da",
+              "#00bcd4",
+              "#00acc1",
+              "#0097a7",
+              "#00838f",
+              "#006064", // The Real Primary Color
               "#0A4D68",
               "#A1590E",
               "#79430B",

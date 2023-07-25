@@ -21,8 +21,9 @@ export const Reception = ({ date, address, place, time, map, calendar }) => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ duration: 1 }}
+        className="w-full"
       >
-        <Flex className="bg-cyan-900/70 text-sm backdrop-opacity-100 Flex flex-col text-center justify-center items-center p-4 md:p-20">
+        <Flex className="bg-cyan-900/70 text-sm backdrop-opacity-100 Flex flex-col text-center justify-start items-center p-4 md:p-16 h-full">
           <Flex direction={"column"} justify={"center"} gap={"md"}>
             <Flex direction={"column"} justify={"center"} align={"center"}>
               <IconCoffee size={60} color="white" />

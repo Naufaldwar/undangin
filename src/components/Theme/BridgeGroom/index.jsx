@@ -22,8 +22,7 @@ export const BridgeGroom = ({
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-  console.log(groomnickname, bridenickname, groomfullname, bridefullname);
-  console.log(brideparents);
+
   return (
     <div
       className="bg-cyan-900"

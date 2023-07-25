@@ -118,7 +118,11 @@ export default function Hero() {
               </List>
 
               <Group mt={30}>
-                <Button radius="xl" size="md" className={classes.control}>
+                <Button
+                  radius="xl"
+                  size="md"
+                  className={`${classes.control} bg-cyan-900`}
+                >
                   Jelajahi Sekarang
                 </Button>
               </Group>

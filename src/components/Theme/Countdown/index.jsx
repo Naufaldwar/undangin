@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 export const Countdown = ({ targetDate }) => {
   const isClient = typeof window !== "undefined"; // Memeriksa apakah kode berjalan di lingkungan klien
   const [client, setClient] = useState(false);
+  console.log(targetDate);
+  const [countdownFinished, setCountdownFinished] = useState(false); // State variable to track if countdown finished
 
   const countDownDate = new Date(targetDate).getTime();
   const [countDown, setCountDown] = useState(
@@ -30,7 +32,13 @@ export const Countdown = ({ targetDate }) => {
   useEffect(() => {
     if (isClient) {
       const interval = setInterval(() => {
-        setCountDown(countDownDate - new Date().getTime());
+        const remainingTime = countDownDate - new Date().getTime();
+        setCountDown(remainingTime);
+
+        // Check if countdown finished
+        if (remainingTime <= 0) {
+          setCountdownFinished(true);
+        }
       }, 1000);
 
       return () => clearInterval(interval);
@@ -71,42 +79,87 @@ export const Countdown = ({ targetDate }) => {
         <Text className="text-center text-4xl font-bold font-nunito text-cyan-900">
           Our Happy Day
         </Text>
-        <Flex className="font-nunito my-10 flex gap-4 lg:gap-40">
-          <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
-              {days}
+        {countdownFinished ? (
+          <>
+            <Text className="text-center text-4xl font-bold font-nunito text-cyan-900">
+              Time's up! Congratulations on your special day!
             </Text>
-            <Text className="font-nunito lg:text-xl text-cyan-900">Days</Text>
+            <Flex className="font-nunito my-10 flex gap-4 lg:gap-40">
+              <Flex direction={"column"} justify={"center"} align={"center"}>
+                <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                  0
+                </Text>
+                <Text className="font-nunito lg:text-xl text-cyan-900">
+                  Days
+                </Text>
+              </Flex>
+              <Flex direction={"column"} justify={"center"} align={"center"}>
+                <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                  0
+                </Text>
+                <Text className="font-nunito lg:text-xl text-cyan-900">
+                  Hours
+                </Text>
+              </Flex>
+              <Flex direction={"column"} justify={"center"} align={"center"}>
+                <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                  0
+                </Text>
+                <Text className="font-nunito lg:text-xl text-cyan-900">
+                  Minutes
+                </Text>
+              </Flex>
+              <Flex direction={"column"} justify={"center"} align={"center"}>
+                <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                  0
+                </Text>
+                <Text className="font-nunito lg:text-xl text-cyan-900">
+                  Seconds
+                </Text>
+              </Flex>
+            </Flex>
+          </> // If countdown is finished, display the desired message
+        ) : (
+          // Otherwise, display the countdown timer
+          <Flex className="font-nunito my-10 flex gap-4 lg:gap-40">
+            <Flex direction={"column"} justify={"center"} align={"center"}>
+              <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                {days}
+              </Text>
+              <Text className="font-nunito lg:text-xl text-cyan-900">Days</Text>
+            </Flex>
+            <Flex direction={"column"} justify={"center"} align={"center"}>
+              <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                {hours}
+              </Text>
+              <Text className="font-nunito lg:text-xl text-cyan-900">
+                Hours
+              </Text>
+            </Flex>
+            <Flex direction={"column"} justify={"center"} align={"center"}>
+              <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                {minutes}
+              </Text>
+              <Text className="font-nunito lg:text-xl text-cyan-900">
+                Minutes
+              </Text>
+            </Flex>
+            <Flex direction={"column"} justify={"center"} align={"center"}>
+              <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
+                {seconds}
+              </Text>
+              <Text className="font-nunito lg:text-xl text-cyan-900">
+                Seconds
+              </Text>
+            </Flex>
           </Flex>
-          <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
-              {hours}
-            </Text>
-            <Text className="font-nunito lg:text-xl text-cyan-900">Hours</Text>
-          </Flex>
-          <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
-              {minutes}
-            </Text>
-            <Text className="font-nunito lg:text-xl text-cyan-900">
-              Minutes
-            </Text>
-          </Flex>
-          <Flex direction={"column"} justify={"center"} align={"center"}>
-            <Text className="text-3xl lg:text-7xl font-semibold font-nunito text-cyan-900">
-              {seconds}
-            </Text>
-            <Text className="font-nunito lg:text-xl text-cyan-900">
-              Seconds
-            </Text>
-          </Flex>
-        </Flex>
+        )}
         <Flex direction={"column"}>
           <Text className="text-center font-nunito  text-cyan-900">
             The highest happiness on earth is the happiness of marriage.
           </Text>
           <Text className="text-center font-semibold font-nunito text-cyan-900">
-            {`"William Lyon Phelps"`}
+            {'"William Lyon Phelps"'}
           </Text>
         </Flex>
       </Flex>
