@@ -10,6 +10,7 @@ import { BackgroundImage, Flex } from "@mantine/core";
 import { dataexample } from "@/assets/data";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { Moment } from "@/components/Theme/Moment";
 export default function Theme() {
   const [data, setData] = useState(dataexample);
   const router = useRouter();
@@ -76,6 +77,7 @@ export default function Theme() {
             />
           </BackgroundImage>
           <LoveStory />
+          <Moment />
         </>
       )}
     </>

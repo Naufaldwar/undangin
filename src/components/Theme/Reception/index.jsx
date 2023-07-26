@@ -16,15 +16,21 @@ export const Reception = ({ date, address, place, time, map, calendar }) => {
   });
   return (
     <>
-      <Flex className="bg-cyan-900/70 backdrop-opacity-100">
+      <Flex className="bg-cyan-900/70 w-full  backdrop-opacity-100">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 2, delay: 0.5 }}
-          className="w-full  Flex  text-sm flex-col text-center justify-start items-center p-4 md:p-16 h-full"
+          className="w-full flex  text-sm flex-col text-center justify-start items-center p-4 md:p-16 h-full"
         >
-          <Flex direction={"column"} justify={"center"} gap={"md"}>
+          <Flex
+            direction={"column"}
+            className="w-full"
+            h={450}
+            justify={"space-between"}
+            gap={"md"}
+          >
             <Flex direction={"column"} justify={"center"} align={"center"}>
               <IconCoffee size={60} color="white" />
               <Text className="font-nunito text-3xl text-white">

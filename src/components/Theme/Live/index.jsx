@@ -14,7 +14,7 @@ export const Live = () => {
   };
 
   return (
-    <Flex className="h-[500px] bg-cyan-900/70 backdrop-opacity-100 rounded-b-full md:rounded-b-[300px]">
+    <Flex className="h-[500px] justify-center items-start w-full bg-cyan-900/70 backdrop-opacity-100 rounded-b-full md:rounded-b-[300px]">
       <motion.div
         className="Flex flex-col text-center justify-start items-center p-4 "
         ref={liveRef}

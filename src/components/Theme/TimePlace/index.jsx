@@ -61,7 +61,7 @@ export const TimePlace = ({ date, time, place, address, map, calendar }) => {
             </motion.div>
           </Flex>
         </motion.div>
-        <Flex className="w-full flex flex-col lg:flex-row ">
+        <Flex className="w-full justify-between flex flex-col lg:flex-row ">
           <Matrimony
             address={address[0]}
             date={date[0]}
