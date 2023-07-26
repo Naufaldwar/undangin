@@ -3,6 +3,7 @@ import Image from "next/image";
 import couple from "../../../assets/images/couple.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { CardImage } from "../CardImage";
 
 export const Moment = () => {
   const [momentsRef, momentsInView] = useInView({
@@ -13,6 +14,7 @@ export const Moment = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
   return (
     <motion.div
       className="Flex flex-col text-center justify-start items-center p-4 "
@@ -53,19 +55,16 @@ export const Moment = () => {
         <Flex className="">
           <Grid grow justify="center" gutter={"xs"}>
             <Grid.Col span={6}>
-              <Image src={couple} alt="couple" />
+              <CardImage />
             </Grid.Col>
             <Grid.Col span={6}>
-              <Image src={couple} alt="couple" />
-            </Grid.Col>
-            <Grid.Col span={12}>
-              <Image src={couple} alt="couple" />
+              <CardImage />
             </Grid.Col>
             <Grid.Col span={6}>
-              <Image src={couple} alt="couple" />
+              <CardImage />
             </Grid.Col>
             <Grid.Col span={6}>
-              <Image src={couple} alt="couple" />
+              <CardImage />
             </Grid.Col>
           </Grid>
         </Flex>
