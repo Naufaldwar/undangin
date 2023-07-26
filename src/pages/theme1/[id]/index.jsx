@@ -77,7 +77,9 @@ export default function Theme() {
             />
           </BackgroundImage>
           <LoveStory />
-          <Moment />
+          <BackgroundImage className="md:px-40 bg-paper-texture bg-repeat bg-contain p-4">
+            <Moment />
+          </BackgroundImage>
         </>
       )}
     </>

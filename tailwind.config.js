@@ -13,6 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "paper-texture": "url('../assets/images/paper.png')",
         "example-couple": "url('../assets/images/couple.jpg')",
+        "dimension-texture": "url('../assets/images/dimension.png')",
       },
     },
     fontFamily: {
