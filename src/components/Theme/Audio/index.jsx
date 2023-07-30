@@ -3,6 +3,8 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useRef, useState } from "react";
 import { IconMusic, IconMusicOff } from "@tabler/icons-react";
 import { Box, Flex } from "@mantine/core";
+import music from "../../../assets/images/music.mp3";
+import ReactAudioPlayer from "react-audio-player";
 
 export const Audio = () => {
   const [ref, inView] = useInView({
@@ -78,7 +80,7 @@ export const Audio = () => {
             ref={audioRef}
             loop
             autoPlay={false} // Jangan autoplay secara otomatis
-            src="https://apiyoutube.cc/m4a/IGhgrKEe6Pj::8fbd7eb143657d853372c2d04ba11e9b::1690272477::no::di"
+            src={music}
           />
         </motion.div>
       </AnimatePresence>
