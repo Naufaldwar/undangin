@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Matrimony } from "../Matrimony";
 import { Live } from "../Live";
 import { Reception } from "../Reception";
+import "add-to-calendar-button";
 
 export const TimePlace = ({ date, time, place, address, map, calendar }) => {
   const [timeRef, timeInView] = useInView({
@@ -78,6 +79,18 @@ export const TimePlace = ({ date, time, place, address, map, calendar }) => {
             map={map[1]}
             calendar={calendar[1]}
           />
+        </Flex>
+        <Flex>
+          <add-to-calendar-button
+            name="Title"
+            options="'Apple','Google'"
+            location="reception"
+            startDate="2023-10-13"
+            endDate="2023-10-13"
+            startTime="10:15"
+            endTime="23:30"
+            timeZone="America/Los_Angeles"
+          ></add-to-calendar-button>
         </Flex>
         <Live />
       </Flex>

@@ -24,7 +24,11 @@ export const Order = () => {
         <Text>Dapatkan Harga Promo Akses Semua Fitur</Text>
         <Text style={{ textDecoration: "line-through" }}>Rp.199.000</Text>
         <Text fz={"30px"}>Rp.50.000</Text>
-        <Button color="green" leftIcon={<IconBrandWhatsapp />}>
+        <Button
+          color="green"
+          leftIcon={<IconBrandWhatsapp />}
+          className="bg-green-500"
+        >
           Pesan Sekarang
         </Button>
       </Flex>
